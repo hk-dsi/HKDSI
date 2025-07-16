@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HKDSI</title>
+
+
+  <!-- Google Font: EB Garamond -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+   <!-- Link to your external stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<script>
+  // Show or hide the button based on scroll position
+  window.onscroll = function() {
+    const btn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Smooth scroll to top when clicked
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+
+
+<body>
+<div class="container">
+  <h1>Hong Kong Diaspora Studies Initiative (HKDSI)<br>流散港人研究計劃 </h1>
+
+  <nav class="navbar">
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    
+    <li class="dropdown">
+      <a href="report.html">Survey Report ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="US.html">US</a></li>
+        <li><a href="UK.html">UK</a></li>
+        <li><a href="Canada.html">Canada</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="engagement.html">Talks & Publications</a></li>
+    <li><a href="signup.html">Sign Up</a></li>
+  </ul>
+</nav>
+
+  <nav class="toc">
+   <h2>Contents</h2>
+  <ul>
+    <li><a href="#demographic">1. Demographic info of Hong Kong diaspora in Canada</a></li>
+    <li><a href="#PID">2. Party affiliation</a></li>
+    <li><a href="#2024_election">3. Intended vote choice for 2025 Federal election</a></li>
+    <li><a href="#performance">4. Performance on various global issues</a></li>
+    <li><a href="#Taiwan">5. Attitude toward Western countries and Taiwan Relation</a></li>
+    <li><a href="#guilt">6. Guilt toward protesters in HK</a></li>
+    <li><a href="#identity">7. Feeling toward various identities</a></li>
+    <li><a href="#HK_engagement">8. Engagement of activities related to Hong Kong</a></li>
+  </ul>
+</nav>
+
+<section id="demographic">
+  <h3>1 Demographic info of Hong Kong diaspora (Canada)</h3>
+    <p><strong>a. Hong Kong diaspora by citizenship and immigration status</strong></p>
+    <p>Our UK sample yielded 550 completed responses. 21.6% of them have the citizenship status and thus are eligible 
+        to vote in Canada. A majority of the Canada sample (53.6%) are work or study visa holders.
+    </p>
+    <table>
+        <caption><strong>Citizen and Immigration Status</strong></caption>
+        <tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr>
+            <tr><td style="text-align:left">Status</td><td>Count</td><td>Percentage</td></tr>
+        <tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr>
+            <tr><td style="text-align:left">Native born citizen</td><td>26</td><td>4.7%</td></tr>
+            <tr><td style="text-align:left">Naturalized citizen</td><td>93</td><td>16.9%</td></tr>
+            <tr><td style="text-align:left">Permanent resident</td><td>122</td><td>22.2%</td></tr>
+            <tr><td style="text-align:left">Work/student visa</td><td>295</td><td>53.6%</td></tr>
+            <tr><td style="text-align:left">Aslyum seeking</td><td>6</td><td>1.1%</td></tr>
+            <tr><td style="text-align:left">Temporary visa</td><td>8</td><td>1.5%</td></tr>
+        <tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr>
+        <tr><td style="text-align:left">Total</td><td>550</td><td>100%</td></tr>
+    </table>       
+</section>
+
+<section id="PID">
+  <h3>2. Party affiliation (Canada)</h3>
+    <p>Generally speaking, which party do you identify with the most?
+    </p>
+    <img src="fig_Canada/fig_CAN_PID.jpeg" alt="UK_PID" class="hero-image">
+</section>
+  
+ <section id="2024_election">
+    <h3>3. Intended vote choice for 2025 Federal election (Canada)</h3>
+    <p>[For eligible voters] Which party do you think you will vote for the 2025 Federal Election?</p> 
+    <p>[For non-eligible voters] If you are eligible to vote in the 2025 election, which party do you think you would vote for?  </p>
+    <img src="fig_Canada/fig_CAN_election2024.jpeg" alt="US election" class="hero-image">
+</section> 
+
+<section id="performance">
+    <h3>4. Performance on various global issues (Canada)</h3>
+    <p>Thinking about the US presidential election candidates, who do you think would be better in dealing with 
+        the following issues? (China policy, Climate policy, Global economy, Israel-Gaza conflict, 
+        Ukraine-Russian conflict)</p>
+    <img src="fig_Canada/fig_performance_CAN.jpeg" alt="performance" class="hero-image">
+</section>
+
+<section id="Taiwan">
+    <h3>5. Attitude toward Western countries and Taiwan Relation (Canada)</h3>
+    <p>If war were to erupt across the strait, do you think the US and other western nations will aid Taiwan by providing
+        financial and humanitarian aid, providing military aids/weapons, and joining the war?</p>
+    <img src="fig_Canada/fig_TW_CAN.jpeg" alt="TW" class="hero-image">
+</section>
+
+<section id="guilt">
+    <h3>6. Guilt toward protesters in HK (Canada)</h3>
+    <p>Do you agree with the following statement regarding protesters who are still in Hong Kong:</p>
+    <ul>
+        <li>I think they sacrifice for the movement on behalf of those who left Hong Kong</li>
+        <li>I think those who left Hong Kong owe them for their sacrifce</li>
+        <li>They made me feel like I am paying too little for this movement</li>
+        <li>I felt guilty when I saw them being arrested</li>
+    </ul>
+    <img src="fig_Canada/fig_guilt_CAN.jpeg" alt="guilt" class="hero-image">
+</section>
+
+<section id="identity">
+    <h3>7. Feeling toward various identities (Canada)</h3>
+    <p>Please use a scale of 0-10 to rate your strength of different identities, with 10 indicating extremely strong, 
+        0 indicating extremely weak, and 5 indicating half-half. How would you rate yourself? (Hongkonger, 
+        Chinese, Canadian):</p>
+    <p>The number indicates the median; the green bar shows 50% of respondents fall within this range;
+        yellow bar is where 80% of response; the curve shows the distribution of the responses. </p>
+    <img src="fig_Canada/fig_identity_CAN.jpeg" alt="identity" class="hero-image">
+</section>
+
+<section id="HK_engagement">
+    <h3>8. Engagement of activities related to Hong Kong (Canada)</h3>
+    <p>What activities have you engaged in supporting Hong Kong's pro-democracy movement in your host country
+        in the past 12 months?</p>
+        <ul>
+            <li>Attending cultural events affiliated with Hong Kong (film screening, exhibition, community activities)</li>
+            <li>Posting and sharing news about Hong Kong on social media</li>
+            <li>Discussing politics of Hong Kong on social media platforms</li>
+            <li>Donating to organizations and individuals who advocate for Hong Kong</li>
+            <li>Attending protest march, demonstration, or rally around homeland politics</li>
+            <li>Vote in host country elections</li>
+            <li>Advocating for Hong Kong in public venues</li>
+            <li>Lobbying and contacting your representatives or government officials</li>
+            <li>Organizing protests or rallies around homeland politics</li>   
+        </ul>
+    <img src="fig_Canada/fig_activities_CAN.jpeg" alt="engagement" class="hero-image">
+</section>
+
+<footer>
+  <div class="container">
+    <!--<p>
+      <a href="https://your-website.com" target="_blank">
+        <img src="logo.png" alt="HKDSI Logo" class="footer-logo">
+        Hong Kong Diaspora Studies Initiative
+      </a>
+    </p>-->
+    <p>&copy; 2025 Hong Kong Diaspora Studies Initiative. All rights reserved.</p>
+    <button onclick="scrollToTop()" class="back-to-top" id="backToTopBtn">Back to Top ↑</button>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+    /* Basic Reset */
+    body, h1, h2, p {
+      margin: 30px;
+      /* padding: 0; */
+      font-family: 'EB Garamond', serif;
+    }
+
+    /* Overall page style */
+    body {
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.6;
+      padding: 0;
+      text-align: left;
+      margin: 40px;  /* Example margin for the body element */
+    }
+
+  /* Table of content style */
+    .toc {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .content, .toc, section {
+      text-align: left;
+    }
+
+
+.toc h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.toc ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.toc li {
+  margin: 5px 0;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+
+    /* Heading Style */
+
+    h1 {
+      color: #2c2c2c;
+      font-size: 2em;
+      margin-bottom: 20px;
+      margin-top: 10px;  /* Example top margin */
+      text-align: left;
+    }
+
+    /* Heading Style */
+    h2 {
+      color: #2c2c2c;
+      font-size: 2em;
+      margin-bottom: 20px;
+      margin-top: 10px;  /* Example top margin */
+      text-align: left;
+    }
+
+  /* Heading Style */
+    h3 {
+      color: #2c2c2c;
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      margin-top: 10px;  /* Example top margin */
+      text-align: left;
+    }
+
+/* Navigation Bar */
+.navbar {
+  background-color: #fff;
+  padding: 10px 20px;
+  /*border-bottom: 1px solid #ccc;*/
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end; /* ← aligns the items to the right */
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #444444;
+  font-size: 1.2em;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.nav-menu a:hover,
+.dropdown-menu a:hover {
+  background-color: #f4f4f4;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 12px;
+  color: #333;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+    /* Image style */
+    .hero-image {
+      display: block;
+      width: 80%;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+    }
+
+
+    /* Content styling */
+
+    .content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: 30px auto;  /* Adds margin between content and other elements */
+    }
+
+
+    .content p {
+      font-size: 1.5em;
+      text-align: left;
+    }
+
+
+    .container {
+      max-width: 960px;  /* or 900px, or any fixed size you prefer */
+      margin: 0 auto;    /* center horizontally */
+      padding: 0 20px;   /* some space on left/right for small screens */
+    }
+
+    ol, ul {
+      margin-left: 2em;   /* creates indentation */
+      padding-left: 1em;  /* optional: controls bullet/number spacing */
+    }
+
+
+    /* Footer style */
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    /* Back to top botton */
+    .back-to-top {
+      display: none;  /* hidden by default */
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      padding: 10px 20px;
+      font-size: 0.9em;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+      transition: opacity 0.3s, background-color 0.3s;
+    } 
+
+    .back-to-top:hover {
+      background-color: #666;
+    }
+
+  /* scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* table */
+  table {
+  margin: 0 auto;
+  text-align: center;
+  }
+
+  table td, table th {
+  padding: 0px 30px; /* top/bottom = 10px, left/right = 20px */
+  }
+
+  section {
+  margin-bottom: 50px; /* or any space you like */
+  }
+
+
+
