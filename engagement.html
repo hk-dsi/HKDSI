@@ -16,6 +16,23 @@
 
 </head>
 
+<script>
+  // Show or hide the button based on scroll position
+  window.onscroll = function() {
+    const btn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Smooth scroll to top when clicked
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
 <body>
 <div class="container">
   <h1>Hong Kong Diaspora Studies Initiative (HKDSI)<br>流散港人研究計劃 </h1>
@@ -27,13 +44,15 @@
     <li class="dropdown">
       <a href="report.html">Survey Report ▾</a>
       <ul class="dropdown-menu">
-        <li><a href="US.html">US Report</a></li>
-        <li><a href="UK.html">UK Report</a></li>
+        <li><a href="US.html">US</a></li>
+        <li><a href="UK.html">UK</a></li>
+        <li><a href="Canada.html">Canada</a></li>
       </ul>
     </li>
     
     <li><a href="engagement.html">Talks & Publications</a></li>
-    <li><a href="signup.html">Sign Up</a></li>
+    <li><a href="sign_up.html">Sign Up</a></li>
+    <li><a href="resources.html">Resources</a></li>
   </ul>
 </nav>
 
@@ -41,19 +60,36 @@
     <img src="airport.jpg" alt="airport info" class="hero-image">
 
     <h2>Publications and Work in Progress</h2>
-    <p></p>
+    <p><a href="https://www.linkingbooks.com.tw/books/15708952">在美離散港人：拼切中的版圖</a> at 思想, vol 25</p>
+    <p>"Voice After Exit: The Prioritization of Homeland-Facing Foreign Policy among the Hong Kong Diaspora" 
+      (with Eddy S.F. Yeung, Ka Ming Chan, Sanho Chung, Athena Tong and Sam Yip) <i>Under Review</i>
+    </p>
+    <p>"Affective Ideological Translation: From Authoritarian Legacies to Immigrant Political Alignment" 
+      (with Ka Ming Chan and Sanho Chung) <i>Work in Progress</i>
+    </p>
 
     <h2>Upcoming Engagements</h2>
-    <p>2025 American Political Science Association Annual Conference, Vancouver, BC, Canada</p>
+    <p>2026 American Political Science Association Annual Conference, Boston, MA</p>
 
     <h2>Past Engagements</h2>
     <p>2025 Western Political Science Association Annual Conference, Seattle, WA</p>
     <p>2025 Hong Kong Conference, Houston, TX</p>
+    <p>2025 American Political Science Association Annual Conference, Vancouver, BC, Canada</p>
     
 
   <footer>
-    <p>Created by Maggie Shum, 2025.</p>
-  </footer>
+  <div class="container">
+    <!--<p>
+      <a href="https://your-website.com" target="_blank">
+        <img src="logo.png" alt="HKDSI Logo" class="footer-logo">
+        Hong Kong Diaspora Studies Initiative
+      </a>
+    </p>-->
+    <p>&copy; 2026 Hong Kong Diaspora Studies Initiative. All rights reserved.</p>
+
+    <!--<button onclick="scrollToTop()" class="back-to-top">Back to Top ↑</button>-->
+  </div>
+</footer>
 
 </div>
 </body>
